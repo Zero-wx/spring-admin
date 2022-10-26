@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 - 👋 Hi, I’m @Zero-wx
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
@@ -9,7 +8,6 @@
 Zero-wx/Zero-wx is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
-=======
 # spring-admin
 
 #### 介绍
@@ -48,4 +46,3 @@ You can click the Preview link to take a look at your changes.
 4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
 5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
 6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
->>>>>>> ac27f9b16334962698dc50d91a40f4f4cecf552f
