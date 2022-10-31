@@ -6,7 +6,6 @@ import lombok.Data;
 
 @Data
 @TableName("t_sys_user")
-
 public class User extends BaseEntity {
     private String userName;
     private String passWord;
