@@ -1,7 +1,8 @@
 package com.spring.adminApi.dao.system;
 
-import com.spring.adminApi.bean.entity.system.User;
-import com.spring.adminApi.dao.BaseRepository;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.spring.adminApi.bean.entity.system.SysUser;
 
-public interface UserRepository extends BaseRepository<User> {
+
+public interface UserRepository extends BaseMapper<SysUser> {
 }

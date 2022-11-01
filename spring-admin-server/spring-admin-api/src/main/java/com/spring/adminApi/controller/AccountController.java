@@ -1,7 +1,7 @@
 package com.spring.adminApi.controller;
 
-import com.spring.adminApi.bean.entity.system.User;
-import com.spring.adminApi.service.system.UserService;
+import com.spring.adminApi.bean.entity.system.SysUser;
+import com.spring.adminApi.service.system.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -20,14 +20,13 @@ import java.util.List;
 public class AccountController {
 
     @Autowired
-    UserService userService;
+    UserServiceImpl userService;
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public List<User> login() {
+    public List<SysUser> login() {
 
 
-        List<User> list = userService.list();
-        System.out.println(list);
+        List<SysUser> list = userService.list();
         return list;
     }
 }

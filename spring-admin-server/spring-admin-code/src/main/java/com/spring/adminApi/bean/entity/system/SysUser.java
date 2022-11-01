@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @TableName("t_sys_user")
-public class User extends BaseEntity {
+public class SysUser extends BaseEntity {
     private String userName;
     private String passWord;
 }
