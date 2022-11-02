@@ -22,15 +22,12 @@ import java.util.List;
 public class AccountController {
     Logger logger = LoggerFactory.getLogger(AccountController.class);
 
-    @Autowired
-    UserService userService;
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public List<User> login() {
+    public void login() {
 
-        List<User> users = userService.selectList();
-        logger.info("登录接口");
-        return users;
+
+
 
     }
 }
