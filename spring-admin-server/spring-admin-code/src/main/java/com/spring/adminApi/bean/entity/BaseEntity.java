@@ -9,13 +9,19 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * Created on 2022/11/2
+ *
+ * @author huangwx
+ * Description:
+ */
 @Data
 public abstract class BaseEntity implements Serializable {
     @TableId(type = IdType.AUTO)
     private Long id;
-    private Long createBy;
     @TableField(fill = FieldFill.INSERT)
     private Date createTime;
-    private Long modifyBy;
+    private Long createBy;
     private Date modifyTime;
+    private Long modifyBy;
 }
