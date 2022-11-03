@@ -21,7 +21,7 @@ import java.util.function.Function;
  * Description:
  */
 @Service
-public class UserService extends ServiceImpl<UserRepository, User> implements BaseService<User> {
+public class UserService  {
 
 
 }
