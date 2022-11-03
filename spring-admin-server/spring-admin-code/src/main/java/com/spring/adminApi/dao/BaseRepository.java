@@ -12,5 +12,5 @@ import java.io.Serializable;
  * Description:
  */
 @Mapper
-public interface BaseRepository<T, ID extends Serializable> extends BaseMapper<T> {
+public interface BaseRepository<T> extends BaseMapper<T> {
 }

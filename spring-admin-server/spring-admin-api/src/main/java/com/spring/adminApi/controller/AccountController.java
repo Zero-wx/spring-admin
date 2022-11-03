@@ -1,6 +1,8 @@
 package com.spring.adminApi.controller;
 
+import com.spring.adminApi.bean.entity.system.Role;
 import com.spring.adminApi.bean.entity.system.User;
+import com.spring.adminApi.service.system.RoleService;
 import com.spring.adminApi.service.system.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,12 +24,34 @@ import java.util.List;
 public class AccountController {
     Logger logger = LoggerFactory.getLogger(AccountController.class);
 
+    @Autowired
+    private UserService userService;
+    @Autowired
+    private RoleService roleService;
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public void login() {
+    public Object login() {
+        List<User> list = userService.list();
+
+        User user = new User();
+        user.setUserName("测试一");
+
+        int add = userService.add(user);
 
 
+        return add;
+    }
 
+    @RequestMapping(value = "/role", method = RequestMethod.POST)
+    public int testRole() {
+
+        Role role = new Role();
+        role.setRole("权限一");
+
+        int add = roleService.add(role);
+        return add;
 
     }
+
+
 }
